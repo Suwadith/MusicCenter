@@ -1,0 +1,43 @@
+<?php
+echo '<!DOCTYPE html>';
+echo '<html lang="en">';
+echo '<head>';
+echo '<meta charset="UTF-8">';
+echo '<title>Music Center</title>';
+echo '<link rel="stylesheet" href="Style.css">';
+echo '</head>';
+echo '<body>';
+echo '';
+echo '<form action="form_validation.php" method="post">';
+echo 'Song Title:';
+echo '<input type="text" name="title" required>';
+echo '<br>';
+echo 'Album Name:';
+echo '<input type="text" name="album" required>';
+echo '<br>';
+echo 'Released Date:';
+echo '<input type="date" name="releaseDate" required>';
+echo '<br>';
+echo 'Composer Name:';
+echo '<input type="text" name="composer" required>';
+echo '<br>';
+echo 'Genre:';
+echo '<select name="genre" required>';
+echo '<option value="pop">Pop</option>';
+echo '<option value="rock">Rock</option>';
+echo '<option value="blues">Blues</option>';
+echo '<option value="hiphop">Hiphop</option>';
+echo '<option value="folk">Folk</option>';
+echo '</select>';
+echo '<br>';
+echo "Photo of the song's musicians:";
+echo '<input type="file" name="photo" accept="image/*" required>';
+echo '<br><br>';
+echo '<input type="reset" value="Clear">';
+echo '<input type="submit" value="Add">';
+echo '</form>';
+echo '';
+echo '</body>';
+echo '</html>';
+
+?>
